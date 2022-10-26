@@ -1,0 +1,9 @@
+print ("Hola, BIenvenido")
+
+a = 10
+b = 15
+
+print (a*b)
+
+input(a)
+input(b)
