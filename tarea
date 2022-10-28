@@ -1,9 +1,13 @@
-print ("Hola, BIenvenido")
+print ("Hola, Bienvenido")
 
 a = 10
 b = 15
 
-print (a*b)
+input("Favor de ingresar numero a?")
 
-input(a)
-input(b)
+#Como puedo dejar solo una alternativa de respuesta?
+
+input("Por Ultimo, numero b?")
+
+print(a*b)
+
