@@ -1,13 +1,37 @@
-print ("Hola, Bienvenido")
+print("Hola, Bienvenido")
+print("que operacion necesita?")
 
-a = 10
-b = 15
+operador = input("+,*,/,-,%")
 
-input("Favor de ingresar numero a?")
+a = input("Favor de ingresar numero a?")
+if a.isdigit():
+    print("numero ingresado es valido")
+if not a.isdigit(): #else
+    print("numero ingresado es invalido")
 
-#Como puedo dejar solo una alternativa de respuesta?
+b = input("Por Ultimo, numero b?")
+if b.isdigit():
+    print("numero ingresado es valido")
+if not b.isdigit(): #else
+    print("numero ingresado es invalido")
 
-input("Por Ultimo, numero b?")
+if operador == "*":
+    print(int(a)*int(b))
+ 
+elif operador == "+":
+    print(int(a)+int(b))
+ 
+elif operador == "-":
+    print(int(a)-int(b))
+ 
+elif operador == "/":
+    print(int(a)/int(b))
 
-print(a*b)
+elif operador == "%":
+    print(int(a)/int(b))
+#aca sacaria porcentaje en python
+else:
+    print("Operador invalido: " + operador)
+
+
 
